@@ -1,0 +1,49 @@
+---
+import { Image } from "astro:assets";
+import dans from "../assets/images/dansestudiet.svg";
+---
+
+<section>
+  <div class="poly">
+    <Image class="logo" src={dans} alt="dans" />
+  </div>
+  <div>
+    <ul>
+      <li>Skema</li>
+      <li>underviser</li>
+      <li>Danseuddannelse</li>
+      <li>Workshops</li>
+      <li>kontakt</li>
+    </ul>
+  </div>
+  <div class="line"></div>
+</section>
+
+<style>
+  @media (min-width: 800px) {
+    .poly {
+      clip-path: polygon(0 0, 25% 0, 30% 59%, 0% 59%);
+      background-color: #196572;
+      padding: 9%;
+    }
+    .logo {
+      margin-top: -10%;
+    }
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 48%;
+    margin-top: -15%;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 50px;
+  }
+  .line {
+    border-bottom: #196572 solid 4px;
+    max-width: 100%;
+    margin-top: 6%;
+  }
+</style>
