@@ -1,0 +1,75 @@
+---
+import { Image } from "astro:assets";
+import omos from "../assets/images/omos.webp";
+---
+
+<section>
+  <div>
+    <h2>Om OS</h2>
+  </div>
+  <div class="slanted-line"></div>
+  <div class="line"></div>
+</section>
+
+<section class="container">
+  <div class="poly">
+    <Image class="omos" src={omos} alt="omos" />
+  </div>
+  <div>
+    <p>
+      I 40 år har Dansestudiet været en vigtig del af det aarhusianske
+      dansemiljø og det er med stor respekt og taknemmelighed at de to nye
+      indehavere Lisbet Kokholm Nør & Anne-Teresa Njust Høj overtager og
+      viderefører Dansestudiet Aarhus. Undervisningen har hovedvægt på modern,
+      jazz, klassisk ballet og street. Der er hold for både nybegyndere, let
+      øvede, øvede og professionelle dansere – uanset alder, niveau og ambition
+      er du velkommen. Dansestudiet Aarhus er central beliggende i Aarhus C tæt
+      på Musikhuset, Bora Bora – dans og visuelt teater, Godsbanen og AROS.
+    </p>
+  </div>
+</section>
+
+<style>
+  .container {
+    background-color: #196572;
+    margin-left: -1%;
+  }
+
+  @media (min-width: 800px) {
+    .slanted-line {
+      width: 100px;
+      height: 12px;
+      background-color: #196572;
+      transform: skewY(73deg);
+      margin-top: 10px;
+      margin-left: 31%;
+    }
+
+    h2 {
+      margin-left: 40%;
+      margin-top: 15%;
+    }
+
+    .line {
+      border-bottom: #196572 solid 4px;
+      max-width: 103%;
+      margin-left: -1%;
+      margin-top: 1%;
+    }
+    .poly {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+      margin: 0%;
+      margin-left: 56%;
+    }
+  }
+  .omos {
+    width: 100%;
+    height: auto;
+  }
+  p {
+    width: 22%;
+    margin-top: -22%;
+    margin-left: 16%;
+    color: white;
+  }
+</style>
