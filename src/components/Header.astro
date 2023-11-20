@@ -3,7 +3,7 @@ import { Image } from "astro:assets";
 import header from "../assets/images/headerbillede.webp";
 ---
 
-<section>
+<section class="container">
   <div class="poly">
     <Image class="header" src={header} alt="header" />
   </div>
@@ -15,11 +15,11 @@ import header from "../assets/images/headerbillede.webp";
 </section>
 
 <style>
-  @font-face {
-    font-family: "MinSkrifttype";
-    src: url("public/fonts/DansestudietDispaly1-Bold.ttf");
-  }
   @media (min-width: 800px) {
+    .container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
     .poly {
       clip-path: polygon(0 0, 30% 0, 38% 56%, 0% 56%);
       padding: 9%;
