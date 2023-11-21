@@ -6,15 +6,24 @@
 
 @font-face {
   font-family: "Dansestudiet2";
-  src: url("public/fonts/DansestudietDisplay1.otf");
+  src: url("public/Fonts/DansestudietDisplay1.otf");
 }
 @font-face {
   font-family: "Dansestudiet3";
-  src: url("public/fonts/DansestudietSimple-Bold.otf");
+  src: url("public/Fonts/DansestudietSimple-Bold.otf");
 }
 @font-face {
   font-family: "Dansestudiet4";
-  src: url("public/fonts/DansestudietSimple.otf");
+  src: url("public/Fonts/DansestudietSimple.otf");
+}
+
+@font-face {
+  font-family: "opensans1";
+  src: url("public/Fonts/OpenSans-Italic-VariableFont_wdth,wght.tff");
+}
+@font-face {
+  font-family: "opensans2";
+  src: url("public/Fonts/OpenSans-VariableFont_wdth,wght.tff");
 }
 
 h2 {
