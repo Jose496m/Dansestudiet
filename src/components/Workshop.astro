@@ -1,0 +1,16 @@
+---
+import { Image } from "astro:assets";
+import workshop1 from "../assets/images/workshop1.png";
+import workshop2 from "../assets/images/workshop2.png";
+---
+
+<div class="workshop">
+  <Image class="workshop1" src={workshop1} alt="workshop1" />
+  <Image class="workshop2" src={workshop2} alt="workshop2" />
+</div>
+
+<style>
+  .workshop {
+    display: flex;
+  }
+</style>
