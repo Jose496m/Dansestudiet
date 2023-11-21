@@ -17,19 +17,19 @@
   src: url("public/Fonts/DansestudietSimple.otf");
 }
 
-@font-face {
+/* @font-face {
   font-family: "opensans1";
   src: url("./Fonts/OpenSans-Italic-VariableFont_wdth,wght.tff");
 }
 @font-face {
   font-family: "opensans2";
   src: url("./Fonts/OpenSans-VariableFont_wdth,wght.tff");
-}
+} */
 
 h2 {
   font-family: Dansestudiet2;
 }
 
 p {
-  font-family: opensans2;
+  font-family: "Open Sans", sans-serif;
 }
