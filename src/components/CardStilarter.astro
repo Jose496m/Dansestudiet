@@ -1,0 +1,28 @@
+---
+import { Image } from "astro:assets";
+import breakdance from "../assets/images/breakdance.webp";
+import hiphop from "../assets/images/hiphop.webp";
+import contemporary from "../assets/images/contemporary.webp";
+---
+
+<div>
+   <Image src={breakdance} alt="breakdance"></Image>
+   <div class="label">
+<h6>BRREAKDANCE</h6>
+<span class="arrow">&rarr;</span>
+   </div>
+</div>
+<style>
+.label{
+background-color: var(--stilarter-default-surface);
+padding: 8px;
+    }
+ .arrow {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+  }
+  .arrow:hover{
+        color: var(--stilarter-hover);
+    }
+</style>
