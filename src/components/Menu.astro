@@ -4,9 +4,10 @@ import dans from "../assets/images/dansestudiet.svg";
 ---
 
 <section>
-  <div class="poly">
+  <div class="img">
     <Image class="logo" src={dans} alt="dans" />
   </div>
+
   <div>
     <ul>
       <li>Skema</li>
@@ -21,33 +22,33 @@ import dans from "../assets/images/dansestudiet.svg";
 
 <style>
   @media (min-width: 800px) {
-    .poly {
-      clip-path: polygon(0 0, 22vw 0, 25vw 28vh, 0 28vh);
-      background-color: #196572;
-      padding: 9%;
-      margin-top: -1%;
-      margin-left: -1%;
-    }
-    .logo {
-      margin-top: -10%;
-    }
-
     ul {
       list-style: none;
       padding: 0;
-      margin-left: 48%;
-      margin-top: -15%;
+      text-align: right;
+      margin-top: -80px;
     }
-
     li {
       display: inline-block;
       margin-right: 50px;
     }
+    img {
+      clip-path: polygon(
+        0 0,
+        calc(100% - 60px) 0,
+        100% calc(100% - 40px),
+        0 calc(100% - 40px)
+      );
+    }
+
+    .logo {
+      background-color: #196572;
+      padding: 100px;
+      margin-top: -5%;
+    }
+
     .line {
       border-bottom: #196572 solid 4px;
-      max-width: 103%;
-      margin-top: 6%;
-      margin-left: -1%;
     }
   }
 </style>
