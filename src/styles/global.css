@@ -6,15 +6,15 @@
 
 @font-face {
   font-family: "Dansestudiet2";
-  src: url("./fonts/DansestudietDisplay1.otf");
+  src: url("public/fonts/DansestudietDisplay1.otf");
 }
 @font-face {
   font-family: "Dansestudiet3";
-  src: url("./fonts/DansestudietSimple-Bold.otf");
+  src: url("public/fonts/DansestudietSimple-Bold.otf");
 }
 @font-face {
   font-family: "Dansestudiet4";
-  src: url("./fonts/DansestudietSimple.otf");
+  src: url("public/fonts/DansestudietSimple.otf");
 }
 
 h2 {
