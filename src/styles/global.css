@@ -89,20 +89,20 @@ h5 {
 p.grey {
   font-family: "Open Sans", sans-serif;
   color: var(--text-grey);
-  font-size: 26px;
+  font-size: 22px;
 }
 
 p.green {
   font-family: "Open Sans", sans-serif;
   color: var(--text-green);
-  font-size: 26px;
+  font-size: 22px;
 }
 
 p.semibold {
   font-family: "Open Sans", sans-serif;
   color: var(--text-green);
   font-weight: 600;
-  font-size: 26px;
+  font-size: 22px;
 }
 
 a {
