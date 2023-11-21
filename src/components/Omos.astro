@@ -3,9 +3,9 @@ import { Image } from "astro:assets";
 import omos from "../assets/images/omos.webp";
 ---
 
+<h2>Om OS</h2>
 <section class="flex">
   <div>
-    <h2>Om OS</h2>
     <div class="slanted-line"></div>
     <div class="line"></div>
 
@@ -26,6 +26,10 @@ import omos from "../assets/images/omos.webp";
 </section>
 
 <style>
+  section {
+    background-color: #196572;
+    margin-top: 25px;
+  }
   @media (min-width: 800px) {
     .flex {
       display: flex;
@@ -38,11 +42,18 @@ import omos from "../assets/images/omos.webp";
         100% 100%,
         calc(100% - 750px) 100%
       );
-      margin-top: 348px;
+      margin-top: -84px;
     }
 
     .line {
       border-bottom: #196572 solid 4px;
+    }
+    h2 {
+      color: #196572;
+      text-align: center;
+      margin-top: 450px;
+    }
+    p {
     }
   }
 </style>
