@@ -3,22 +3,14 @@ import { Image } from "astro:assets";
 import omos from "../assets/images/omos.webp";
 ---
 
-<section>
+<section class="flex">
   <div>
     <h2>Om OS</h2>
-  </div>
-  <div class="slanted-line"></div>
-  <div class="line"></div>
-</section>
-
-<section class="container">
-  <div class="poly">
-    <Image class="omos" src={omos} alt="omos" />
-  </div>
-  <div>
+    <div class="slanted-line"></div>
+    <div class="line"></div>
     <p>
       I 40 år har Dansestudiet været en vigtig del af det aarhusianske
-      dansemiljø og det er med stor respekt og taknemmelighed at de to nye
+      dansemiljø, og det er med stor respekt og taknemmelighed at de to nye
       indehavere Lisbet Kokholm Nør & Anne-Teresa Njust Høj overtager og
       viderefører Dansestudiet Aarhus. Undervisningen har hovedvægt på modern,
       jazz, klassisk ballet og street. Der er hold for både nybegyndere, let
@@ -27,9 +19,25 @@ import omos from "../assets/images/omos.webp";
       på Musikhuset, Bora Bora – dans og visuelt teater, Godsbanen og AROS.
     </p>
   </div>
+  <div class="img">
+    <Image class="omos" src={omos} alt="omos" />
+  </div>
 </section>
 
 <style>
   @media (min-width: 800px) {
+    .flex {
+      display: flex;
+    }
+
+    img {
+      clip-path: polygon(
+        calc(100% - 400px) 0,
+        100% 0,
+        100% calc(100% - 200px),
+        26% calc(100% - 200px)
+      );
+      margin-top: 348px;
+    }
   }
 </style>

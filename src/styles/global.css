@@ -19,13 +19,17 @@
 
 @font-face {
   font-family: "opensans1";
-  src: url("public/Fonts/OpenSans-Italic-VariableFont_wdth,wght.tff");
+  src: url("./Fonts/OpenSans-Italic-VariableFont_wdth,wght.tff");
 }
 @font-face {
   font-family: "opensans2";
-  src: url("public/Fonts/OpenSans-VariableFont_wdth,wght.tff");
+  src: url("./Fonts/OpenSans-VariableFont_wdth,wght.tff");
 }
 
 h2 {
   font-family: Dansestudiet2;
+}
+
+p {
+  font-family: opensans2;
 }
