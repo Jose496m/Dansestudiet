@@ -4,7 +4,7 @@ import header from "../assets/images/headerbillede.webp";
 ---
 
 <section class="container">
-  <div class="poly">
+  <div class="img">
     <Image class="header" src={header} alt="header" />
   </div>
 
@@ -16,25 +16,35 @@ import header from "../assets/images/headerbillede.webp";
 
 <style>
   @media (min-width: 800px) {
-    .container {
-      flex-direction: row;
-      justify-content: space-between;
+    ul {
+      list-style: none;
+      padding: 0;
+      text-align: right;
+      margin-top: -80px;
     }
-    .poly {
-      clip-path: polygon(0 0, 555px 0, 717px 623px, 0% 623px);
-      padding: 9%;
-      margin-top: -9%;
-      margin-left: -10%;
+    li {
+      display: inline-block;
+      margin-right: 50px;
     }
-    h2 {
-      margin-left: 60%;
-      margin-top: -13%;
+    img {
+      clip-path: polygon(
+        0 0,
+        calc(100% - 273px) 0,
+        calc(100% - 151px) calc(100% - 300px),
+        0 calc(100% - 300px)
+      );
     }
+
+    .header {
+    }
+
     .line {
       border-bottom: #196572 solid 4px;
-      max-width: 103%;
-      margin-top: -495px;
-      margin-left: -1%;
+      margin-top: -307px;
+    }
+    h2 {
+      text-align: center;
+      margin-top: -400px;
     }
   }
 </style>
