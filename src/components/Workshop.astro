@@ -5,15 +5,24 @@ import workshop2 from "../assets/images/workshop2.webp";
 ---
 
 <div class="workshop">
-  <Image class="workshop1" src={workshop1} alt="workshop1" />
   <Image class="workshop2" src={workshop2} alt="workshop2" />
+  <Image class="workshop1" src={workshop1} alt="workshop1" />
 </div>
 
 <style>
   .workshop {
     display: flex;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    justify-content: space-between;
+    gap: 160px;
+  }
+
+  .workshop1 {
+    width: 100%;
+    height: auto;
+    margin: 60px 80px 60px 0px;
+  }
+  .workshop2 {
+    width: 100%;
+    height: auto;
+    margin: 60px 0px 60px 80px;
   }
 </style>
