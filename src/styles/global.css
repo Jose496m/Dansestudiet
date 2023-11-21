@@ -1,8 +1,15 @@
 :root {
-  /* Mode 1 */
   /* colors */
+  --color-green-100: #588187;
+  --color-green-600: #196572;
+  --color-white-200: #efefef;
+  --color-yellow-500: #ffe000;
+  /* color nav & border*/
   --nav-text: var(--color-green-600);
-  --border-stroke: var(--color-green-400);
+  --border-stroke: var(--color-green-600);
+  /* Text */
+  --text-green: var(--color-green-600);
+  --text-grey: var(--color-white-200);
   /* Button primary*/
   --button-primary-default-border: var(--color-yellow-500);
   --button-primary-default-surface: var(--color-green-600);
@@ -61,8 +68,30 @@
 
 h2 {
   font-family: Dansestudiet2;
+  color: var(--text-green);
+  font-size: 64px;
+}
+h3 {
+  font-family: Dansestudiet2;
+  color: var(--text-green);
+  font-size: 40px;
+}
+h4 {
+  font-family: "Open Sans", sans-serif;
+  color: var(--text-green);
+  font-size: 36px;
+}
+h5 {
+  font-family: "Open Sans", sans-serif;
+  color: var(--text-green);
+  font-size: 30px;
+}
+p .grey {
+  font-family: "Open Sans", sans-serif;
+  color: var(--text-grey);
 }
 
-p {
+p .green {
   font-family: "Open Sans", sans-serif;
+  color: var(--text-green);
 }
