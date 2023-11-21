@@ -1,3 +1,36 @@
+:root {
+  /* Mode 1 */
+  /* colors */
+  --nav-text: var(--color-green-600);
+  --border-stroke: var(--color-green-400);
+  /* Button primary*/
+  --button-primary-default-border: var(--color-yellow-500);
+  --button-primary-default-surface: var(--color-green-600);
+  --button-primary-default-text: var(--color-yellow-500);
+  --button-primary-hover-border: var(--color-green-600);
+  --button-primary-hover-surface: var(--color-yellow-500);
+  --button-primary-hover-text: var(--color-green-600);
+  --button-primary-icon: var(--color-yellow-500);
+  /* Button secondary*/
+  --button-secondary-default-border: var(--color-white-200);
+  --button-secondary-default-surface: var(--color-green-600);
+  --button-secondary-default-text: var(--color-white-200);
+  --button-secondary-hover-border: var(--color-green-600);
+  --button-secondary-hover-surface: var(--color-yellow-500);
+  --button-secondary-hover-text: var(--color-green-600);
+  --button-secondary-icon: var(--color-yellow-500);
+  /* Logo */
+  --logo-default-surface: var(--color-white-200);
+  --logo-hover: var(--color-yellow-500);
+  /* Stilarter badge */
+  --stilarter-default-surface: var(--color-green-600);
+  --stilarter-default-text: var(--color-white-200);
+  --stilarter-hover: var(--color-yellow-500);
+  /* Surface */
+  --surface-primary: var(--color-white-200);
+  --surface-secondary: var(--color-green-600);
+}
+
 @font-face {
   font-family: "Dansestudiet1";
   src: url("./fonts/DansestudietDisplay1-bold.otf") format("truetype");
