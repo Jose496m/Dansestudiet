@@ -2,12 +2,14 @@
 import { Image } from "astro:assets";
 import workshop1 from "../assets/images/workshop1.webp";
 import workshop2 from "../assets/images/workshop2.webp";
+import Overskrift from "./Overskrift.astro";
 ---
 
-<div class="workshop">
+<Overskrift title="Månedens Workshop" />
+<section class="workshop">
   <Image class="workshop2" src={workshop2} alt="workshop2" />
   <Image class="workshop1" src={workshop1} alt="workshop1" />
-</div>
+</section>
 
 <style>
   @media (min-width: 800px) {
@@ -25,6 +27,11 @@ import workshop2 from "../assets/images/workshop2.webp";
       width: 100%;
       height: auto;
       margin: 60px 0px 60px 80px;
+    }
+
+    section {
+      border-block: 4px solid var(--border-stroke);
+      padding: 4rem;
     }
   }
 </style>
