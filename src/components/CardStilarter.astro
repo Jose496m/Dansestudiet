@@ -5,31 +5,32 @@ import hiphop from "../assets/images/hiphop.webp";
 import contemporary from "../assets/images/contemporary.webp";
 ---
 
-<div class="card">
-  <Image src={breakdance} alt="breakdance" />
-  <div class="label">
-    <h6>BREAKDANCE</h6>
-    <span class="arrow">&rarr;</span>
+<div class="cards">
+  <div class="card">
+    <Image src={breakdance} alt="breakdance" />
+    <div class="label">
+      <h6>BREAKDANCE</h6>
+      <span class="arrow">&rarr;</span>
+    </div>
   </div>
-</div>
-<div>
-  <Image src={hiphop} alt="hiphop" />
-  <div class="label">
-    <h6>HIP-HOP</h6>
-    <span class="arrow">&rarr;</span>
+  <div>
+    <Image src={hiphop} alt="hiphop" />
+    <div class="label">
+      <h6>HIP-HOP</h6>
+      <span class="arrow">&rarr;</span>
+    </div>
   </div>
-</div>
-<div>
-  <Image src={contemporary} alt="contemporary" />
-  <div class="label">
-    <h6>CONTEMPORARY</h6>
-    <span class="arrow">&rarr;</span>
+  <div>
+    <Image src={contemporary} alt="contemporary" />
+    <div class="label">
+      <h6>CONTEMPORARY</h6>
+      <span class="arrow">&rarr;</span>
+    </div>
   </div>
 </div>
 <style>
   .label {
     background-color: var(--stilarter-default-surface);
-    padding: 8px;
   }
   .arrow {
     display: flex;
@@ -39,7 +40,19 @@ import contemporary from "../assets/images/contemporary.webp";
   .arrow:hover {
     color: var(--stilarter-hover);
   }
-  .card {
-    display: ;
+
+  @media (min-width: 600px) {
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 30px;
+    }
+    .label {
+      display: flex;
+      color: white;
+      transform: translate(0, -30px);
+      cursor: pointer;
+      justify-content: space-between;
+    }
   }
 </style>
