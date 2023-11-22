@@ -86,6 +86,12 @@ h5 {
   color: var(--text-green);
   font-size: 30px;
 }
+h6 {
+  font-family: "Open Sans", sans-serif;
+  color: var(--stilarter-default-text);
+  text-transform: uppercase;
+  font-size: 27px;
+}
 p.grey {
   font-family: "Open Sans", sans-serif;
   color: var(--text-grey);
@@ -109,4 +115,5 @@ a {
   font-family: "Open Sans", sans-serif;
   color: var(--text-green);
   text-transform: uppercase;
+  font-size: 30px;
 }

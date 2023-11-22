@@ -3,7 +3,7 @@ import { Image } from "astro:assets";
 import dans from "../assets/images/dansestudiet.svg";
 ---
 
-<section>
+<section class="line">
   <div>
     <ul>
       <li>Skema</li>
@@ -13,9 +13,8 @@ import dans from "../assets/images/dansestudiet.svg";
       <li>kontakt</li>
     </ul>
   </div>
-  <div>
-    <Image class="logo" src={dans} alt="dans" />
-  </div>
+
+  <Image class="logo" src={dans} alt="dans" />
 </section>
 
 <style>
@@ -28,7 +27,6 @@ import dans from "../assets/images/dansestudiet.svg";
     li {
       display: inline-block;
       margin-right: 50px;
-      margin-top: 165px;
     }
     img {
       clip-path: polygon(
@@ -42,7 +40,9 @@ import dans from "../assets/images/dansestudiet.svg";
     .logo {
       background-color: #196572;
       padding: 200px;
-      margin-top: -221px;
+    }
+    .line {
+      border-bottom: #196572;
     }
   }
 </style>
