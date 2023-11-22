@@ -132,3 +132,8 @@ a {
   text-transform: uppercase;
   font-size: 30px;
 }
+li {
+  font-family: "Open Sans", sans-serif;
+  color: var(--text-green);
+  font-size: 20px;
+}
