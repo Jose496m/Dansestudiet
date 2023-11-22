@@ -1,3 +1,6 @@
+* {
+  margin: 0;
+}
 :root {
   /* colors */
   --color-green-100: #588187;
@@ -36,6 +39,19 @@
   /* Surface */
   --surface-primary: var(--color-white-200);
   --surface-secondary: var(--color-green-600);
+}
+
+body {
+  min-block-size: 100%;
+}
+
+img,
+picture,
+video,
+svg {
+  display: block;
+
+  max-width: 100%;
 }
 
 @font-face {

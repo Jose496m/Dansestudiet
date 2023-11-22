@@ -1,7 +1,20 @@
 ---
+import Button from "./Button.astro";
 import CardStilarter from "./CardStilarter.astro";
+import Overskrift from "./Overskrift.astro";
 ---
 
+<Overskrift title="Stilarter" />
 <section>
   <CardStilarter />
+  <Button link="#" title="Se alle" />
 </section>
+<style>
+  img {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 13% 100%);
+  }
+  section {
+    border-block: 4px solid var(--border-stroke);
+    padding: 4rem;
+  }
+</style>

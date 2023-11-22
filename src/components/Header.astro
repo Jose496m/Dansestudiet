@@ -7,8 +7,6 @@ import header from "../assets/images/headerbillede3.webp";
   <div class="img">
     <Image class="header" src={header} alt="header" />
   </div>
-
-  <div class="line"></div>
   <div>
     <h2>Danse Studiet</h2>
   </div>
@@ -27,17 +25,12 @@ import header from "../assets/images/headerbillede3.webp";
       margin-right: 50px;
     }
     img {
-      clip-path: polygon(
-        0 0,
-        calc(100% - 174px) 0,
-        calc(100% - 94px) calc(100% - 0px),
-        0 calc(100% - 0px)
-      );
+      clip-path: polygon(0 0, calc(100% - 174px) 0, calc(100% - 94px) calc(100% - 0px), 0 calc(100% - 0px));
     }
 
-    .line {
-      border-bottom: #196572 solid 4px;
-      margin-top: -5px;
+    section {
+      border-bottom: 4px solid var(--border-stroke);
+      padding-bottom: 11rem;
     }
     h2 {
       text-align: center;
