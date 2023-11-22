@@ -8,7 +8,16 @@ import Overskrift from "./Overskrift.astro";
 <div class="line"></div>
 <section class="flex">
   <div>
-    <p class="grey">I 40 år har Dansestudiet været en vigtig del af det aarhusianske dansemiljø, og det er med stor respekt og taknemmelighed at de to nye indehavere Lisbet Kokholm Nør & Anne-Teresa Njust Høj overtager og viderefører Dansestudiet Aarhus. Undervisningen har hovedvægt på modern, jazz, klassisk ballet og street. Der er hold for både nybegyndere, let øvede, øvede og professionelle dansere – uanset alder, niveau og ambition er du velkommen. Dansestudiet Aarhus er central beliggende i Aarhus C tæt på Musikhuset, Bora Bora – dans og visuelt teater, Godsbanen og AROS.</p>
+    <p class="grey">
+      I 40 år har Dansestudiet været en vigtig del af det aarhusianske
+      dansemiljø, og det er med stor respekt og taknemmelighed at de to nye
+      indehavere Lisbet Kokholm Nør & Anne-Teresa Njust Høj overtager og
+      viderefører Dansestudiet Aarhus. Undervisningen har hovedvægt på modern,
+      jazz, klassisk ballet og street. Der er hold for både nybegyndere, let
+      øvede, øvede og professionelle dansere – uanset alder, niveau og ambition
+      er du velkommen. Dansestudiet Aarhus er central beliggende i Aarhus C tæt
+      på Musikhuset, Bora Bora – dans og visuelt teater, Godsbanen og AROS.
+    </p>
   </div>
   <div class="img">
     <Image class="omos" src={omos} alt="omos" />
@@ -25,8 +34,14 @@ import Overskrift from "./Overskrift.astro";
     }
 
     img {
-      clip-path: polygon(calc(100% - 829px) calc(100% - 585px), 123% calc(100% - 585px), 100% 100%, calc(100% - 750px) 100%);
+      clip-path: polygon(
+        calc(100% - 829px) calc(100% - 585px),
+        123% calc(100% - 585px),
+        100% 100%,
+        calc(100% - 750px) 100%
+      );
       margin-top: -84px;
+      margin-left: 227px;
     }
 
     h2 {
@@ -39,6 +54,11 @@ import Overskrift from "./Overskrift.astro";
       margin: 0 auto; /* Centerer linjen */
 
       border-bottom: 4px solid #196572;
+    }
+    p {
+      width: 550px;
+      margin-left: 100px;
+      margin-top: 70px;
     }
   }
 </style>
