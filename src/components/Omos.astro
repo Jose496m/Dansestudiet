@@ -4,10 +4,9 @@ import omos from "../assets/images/omos.webp";
 ---
 
 <h2>Om OS</h2>
-<section class="flex line">
+<div class="line"></div>
+<section class="flex">
   <div>
-    <div class="slanted-line"></div>
-
     <p class="grey">
       I 40 år har Dansestudiet været en vigtig del af det aarhusianske
       dansemiljø, og det er med stor respekt og taknemmelighed at de to nye
@@ -27,7 +26,6 @@ import omos from "../assets/images/omos.webp";
 <style>
   section {
     background-color: #196572;
-    margin-top: 25px;
   }
   @media (min-width: 800px) {
     .flex {
@@ -47,10 +45,13 @@ import omos from "../assets/images/omos.webp";
     h2 {
       color: #196572;
       text-align: center;
-      margin-top: 450px;
+      margin-top: 200px;
     }
     .line {
-      border-bottom: #196572 solid 4px;
+      width: 100%; /* Juster bredden efter behov */
+      margin: 0 auto; /* Centerer linjen */
+
+      border-bottom: 4px solid #196572;
     }
   }
 </style>
