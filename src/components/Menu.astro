@@ -7,11 +7,11 @@ const { link } = Astro.props;
 <nav>
   <ul>
     <li><a href={link}><Image class="logo" src={dans} alt="dans" /></a></li>
-    <li>Skema</li>
-    <li>Underviser</li>
-    <li>Danseuddannelse</li>
-    <li>Workshops</li>
-    <li>Kontakt</li>
+    <li class="menu">Skema</li>
+    <li class="menu">Underviser</li>
+    <li class="menu">Danseuddannelse</li>
+    <li class="menu">Workshops</li>
+    <li class="menu">Kontakt</li>
   </ul>
 </nav>
 
@@ -19,13 +19,14 @@ const { link } = Astro.props;
   @media (min-width: 800px) {
     ul {
       list-style: none;
-      padding: 0;
+      padding-left: 0;
     }
     li {
       display: inline-block;
       margin-right: 50px;
-      margin-top: 39px;
+      margin-top: 20px;
     }
+
     img {
       clip-path: polygon(0px 0px, 400px 0px, 97.77% 139px, 0px 140px);
     }
