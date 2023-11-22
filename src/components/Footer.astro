@@ -23,16 +23,12 @@ import map from "../assets/images/map.svg";
   <div class="spalte2">
     <p class="kommende_begivenheder">Kommender Begivenheder</p>
     <div class="box1">
-      <p>
-        Stabilitetstræning & Stræk <br />
-        MANDAG 8:30-9:30 <br />
-      </p>
+      <p>Stabilitetstræning & Stræk</p>
+      <p class="light_tekst">MANDAG 8:30-9:30</p>
     </div>
     <div class="box2">
-      <p>
-        Street Dance Teens <br />
-        MANDAG 17:30-18:30
-      </p>
+      <p>Street Dance Teens</p>
+      <p class="light_tekst">MANDAG 17:30-18:30</p>
     </div>
   </div>
 
@@ -67,11 +63,14 @@ import map from "../assets/images/map.svg";
     font-weight: 600;
   }
 
+  .light_tekst {
+    font-weight: lighter;
+  }
   .box1,
   .box2 {
-    width: 370px;
+    width: 300px;
     border: 3px solid var(--text-green);
-    padding: 10px;
+    padding: 15px;
     margin: -3px;
   }
 
