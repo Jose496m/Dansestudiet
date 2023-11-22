@@ -13,14 +13,14 @@ import contemporary from "../assets/images/contemporary.webp";
       <span class="arrow">&rarr;</span>
     </div>
   </div>
-  <div>
+  <div class="card">
     <Image src={hiphop} alt="hiphop" />
     <div class="label">
       <h6>HIP-HOP</h6>
       <span class="arrow">&rarr;</span>
     </div>
   </div>
-  <div>
+  <div class="card">
     <Image src={contemporary} alt="contemporary" />
     <div class="label">
       <h6>CONTEMPORARY</h6>
@@ -46,6 +46,10 @@ import contemporary from "../assets/images/contemporary.webp";
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 30px;
+      padding-block: 4rem;
+    }
+    .card {
+      max-width: fit-content;
     }
     .label {
       display: flex;
