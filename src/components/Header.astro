@@ -9,7 +9,7 @@ import Button from "./Button.astro";
     <Image class="header" src={header} alt="header" />
   </div>
   <div class="title">
-    <h1>Danse</h1>
+    <h1 class="danse">Danse</h1>
     <h1 class="studiet">Studiet</h1>
     <Button class="button" link="#" title="Tilmelding" />
   </div>
@@ -24,7 +24,12 @@ import Button from "./Button.astro";
       border-bottom: 4px solid var(--border-stroke);
     }
     img {
-      clip-path: polygon(0 0, calc(100% - 145px) 0, calc(100% - 7px) calc(100% - 0px), 0 calc(100% - 0px));
+      clip-path: polygon(
+        0 0,
+        calc(100% - 145px) 0,
+        calc(100% - 7px) calc(100% - 0px),
+        0 calc(100% - 0px)
+      );
       grid-column: 1/2;
       grid-row: 1/3;
     }
@@ -40,6 +45,41 @@ import Button from "./Button.astro";
       font-size: 140px;
       margin-top: -15px;
       margin-left: 261px;
+    }
+  }
+  @media (max-width: 600px) {
+    section {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: 1.5fr auto;
+      border-bottom: 4px solid var(--border-stroke);
+    }
+    img {
+      clip-path: polygon(
+        0 0,
+        calc(100% - 234px) 0,
+        calc(100% - 76px) calc(100% - 0px),
+        0 calc(100% - 0px)
+      );
+      grid-column: 1/2;
+      grid-row: 1/3;
+    }
+
+    .title {
+      margin-top: 5rem;
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+    .button {
+      font-size: 21px;
+    }
+    .studiet {
+      font-size: 67px;
+      margin-top: -15px;
+    }
+    .danse {
+      font-size: 67px;
+      margin-left: -75px;
     }
   }
 </style>

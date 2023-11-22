@@ -34,4 +34,26 @@ const { title, link } = Astro.props;
     min-width: fit-content;
     width: fit-content;
   }
+
+  @media (max-width: 600px) {
+    a {
+      display: grid;
+      border: none;
+      background: transparent;
+      align-items: center;
+      text-decoration: none;
+      font-size: 20px;
+    }
+    span {
+      color: var(--button-primary-default-text);
+      background-color: var(--button-primary-default-surface);
+      border: 4px solid var(--button-primary-default-border);
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      cursor: pointer;
+      box-sizing: border-box;
+      position: relative;
+      padding: 15px 20px;
+    }
+  }
 </style>
