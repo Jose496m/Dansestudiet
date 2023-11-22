@@ -1,4 +1,80 @@
 ---
 import { Image } from "astro:assets";
-import facebook from "../assets/images/";
+import facebook from "../assets/images/facebook.svg";
+import youtube from "../assets/images/youtube.svg";
+import instagram from "../assets/images/instagram.svg";
+import map from "../assets/images/map.svg";
 ---
+
+<div class="spalter">
+  <div class="spalte1">
+    <p class="kontakt">Kontakt</p>
+    <p>
+      Dansestudiet Aarhus <br />
+      Bissensgade 14 B 8000 Aarhus C <br />
+      E-mail: info@dansestudiet.dk <br />
+      Telefon: 40102229 <br />
+      CVR-nummer: 41118687
+    </p>
+  </div>
+
+  <article class="spalte2">
+    <p class="kommende_begivenheder">Kommende Begivenheder</p>
+    <ul>
+      <li>Stabilitetstræning & Stræk</li>
+      <li>MANDAG 8:30-9:30</li>
+      <li>Street Dance Teens</li>
+      <li>MANDAG 17:30-18:30</li>
+      <li>
+        <div class="logo">
+          <Image class="facebook" src={facebook} alt="facebook" />
+          <Image class="youtube" src={youtube} alt="youtube" />
+          <Image class="instagram" src={instagram} alt="instagram" />
+          <Image class="map" src={map} alt="map" />
+        </div>
+      </li>
+    </ul>
+  </article>
+
+  <div class="spalte3">
+    <p class="aabningstider">Åbningstider</p>
+    <p>
+      Mandag 09:00 - 21:00 <br />
+      Tirsdag 09:30 - 21:00 <br />
+      Onsdag 16:00 - 21:00 <br />
+      Torsdag 08:00 - 21:00 <br />
+      Fredag 08:00 - 17:30 <br />
+      Lørdag 10:00 - 11:00 <br />
+    </p>
+  </div>
+
+  <style>
+    ul {
+      list-style: none;
+    }
+
+    .kontakt,
+    .kommende_begivenheder .aabningstider {
+      font-size: 1.5rem;
+    }
+    .spalter {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      width: 10%;
+      min-width: 150px;
+    }
+
+    .facebook,
+    .youtube,
+    .instagram,
+    .map {
+    }
+  </style>
+</div>
