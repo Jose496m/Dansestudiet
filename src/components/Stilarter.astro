@@ -12,14 +12,16 @@ import Overskrift from "./Overskrift.astro";
   </div>
 </section>
 <style>
-  .green_background {
-    clip-path: polygon(4px -1px, 183.46% -1px, 182.62% 100.17%, 23.17% 100%);
-    background-color: var(--surface-secondary);
-    padding: 6.2rem;
-  }
-  section {
-    border-block: 4px solid var(--border-stroke);
-    display: flex;
-    padding-left: 4rem;
+  @media (min-width: 900px) {
+    .green_background {
+      clip-path: polygon(4px -1px, 183.46% -1px, 182.62% 100.17%, 23.17% 100%);
+      background-color: var(--surface-secondary);
+      padding: 6.2rem;
+    }
+    section {
+      border-block: 4px solid var(--border-stroke);
+      display: flex;
+      padding-left: 4rem;
+    }
   }
 </style>
