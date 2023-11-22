@@ -7,8 +7,12 @@ import Overskrift from "./Overskrift.astro";
 
 <Overskrift title="Månedens Workshop" />
 <section class="workshop">
-  <Image class="workshop2" src={workshop2} alt="workshop2" />
-  <Image class="workshop1" src={workshop1} alt="workshop1" />
+  <div class="workshop-image">
+    <Image class="workshop1" src={workshop1} alt="workshop1" />
+  </div>
+  <div class="workshop-image">
+    <Image class="workshop2" src={workshop2} alt="workshop2" />
+  </div>
 </section>
 
 <style>
@@ -18,15 +22,15 @@ import Overskrift from "./Overskrift.astro";
       gap: 160px;
     }
 
-    .workshop1 {
-      width: 100%;
-      height: auto;
-      margin: 60px 80px 60px 0px;
+    .workshop-image {
+      flex: 1;
+      max-width: 100%;
     }
+
+    .workshop1,
     .workshop2 {
       width: 100%;
       height: auto;
-      margin: 60px 0px 60px 80px;
     }
 
     section {
