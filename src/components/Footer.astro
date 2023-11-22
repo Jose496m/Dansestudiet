@@ -46,10 +46,10 @@ import map from "../assets/images/map.svg";
 </div>
 
 <div class="logo">
-  <Image class="facebook" src={facebook} alt="facebook" />
-  <Image class="youtube" src={youtube} alt="youtube" />
-  <Image class="instagram" src={instagram} alt="instagram" />
-  <Image class="map" src={map} alt="map" />
+  <Image class="facebook logo-container" src={facebook} alt="facebook" />
+  <Image class="youtube logo-container" src={youtube} alt="youtube" />
+  <Image class="instagram logo-container" src={instagram} alt="instagram" />
+  <Image class="map logo-container" src={map} alt="map" />
 </div>
 
 <style>
@@ -98,6 +98,11 @@ import map from "../assets/images/map.svg";
   .youtube,
   .instagram,
   .map {
+  }
+
+  .logo-container {
+    height: 35px;
+    width: fit-content;
   }
 </style>
 

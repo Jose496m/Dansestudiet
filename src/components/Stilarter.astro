@@ -6,15 +6,19 @@ import Overskrift from "./Overskrift.astro";
 
 <Overskrift title="Stilarter" />
 <section>
-  <CardStilarter />
-  <Button link="#" title="Se alle" />
+  <CardStilarter class="cards" />
+  <div class="green_background">
+    <Button link="#" title="Se alle" />
+  </div>
 </section>
 <style>
-  img {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 13% 100%);
+  .green_background {
+    clip-path: polygon(0px 0px, 183.46% -1px, 182.62% 100.17%, 13% 100%);
+    background-color: var(--surface-secondary);
   }
   section {
     border-block: 4px solid var(--border-stroke);
-    padding: 4rem;
+    display: flex;
+    padding-left: 4rem;
   }
 </style>
