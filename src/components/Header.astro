@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import header from "../assets/images/headerbillede.webp";
+import Button from "./Button.astro";
 ---
 
 <section class="container">
@@ -10,21 +11,30 @@ import header from "../assets/images/headerbillede.webp";
   <div class="title">
     <h1>Danse</h1>
     <h1 class="studiet">Studiet</h1>
+    <Button class="button" link="#" title="Tilmelding" />
   </div>
 </section>
 
 <style>
   @media (min-width: 800px) {
+    section {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: 1.5fr auto;
+      border-bottom: 4px solid var(--border-stroke);
+    }
     img {
       clip-path: polygon(0 0, calc(100% - 145px) 0, calc(100% - 7px) calc(100% - 0px), 0 calc(100% - 0px));
+      grid-column: 1/2;
+      grid-row: 1/3;
     }
-    section {
-      display: flex;
-      border-bottom: 4px solid var(--border-stroke);
-      padding-bottom: 3rem;
-    }
+
     .title {
       margin-top: 5rem;
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+    .button {
     }
     .studiet {
       font-size: 140px;
