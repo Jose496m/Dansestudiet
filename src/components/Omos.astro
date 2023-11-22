@@ -28,20 +28,28 @@ import Overskrift from "./Overskrift.astro";
   section {
     background-color: #196572;
   }
+
   @media (min-width: 800px) {
     .flex {
       display: flex;
     }
 
+    .img {
+      max-width: 500px; /* Juster bredden efter behov */
+      width: 100%; /* Sørg for, at billedet tager 100% af forælderens bredde */
+    }
+
     img {
       clip-path: polygon(
-        calc(100% - 829px) calc(100% - 585px),
-        123% calc(100% - 585px),
+        calc(100% - 500px) calc(100% - 400px),
+        100% calc(100% - 400px),
         100% 100%,
-        calc(100% - 750px) 100%
+        calc(100% - 375px) 100%
       );
-      margin-top: -84px;
-      margin-left: 174px;
+
+      margin-left: 600px;
+      width: 100%; /* Sørg for, at billedet tager 100% af forælderens bredde */
+      height: auto;
     }
 
     h2 {
@@ -49,14 +57,15 @@ import Overskrift from "./Overskrift.astro";
       text-align: center;
       margin-top: 200px;
     }
+
     .line {
       width: 100%; /* Juster bredden efter behov */
       margin: 0 auto; /* Centerer linjen */
-
       border-bottom: 4px solid #196572;
     }
+
     p {
-      width: 550px;
+      width: 500px;
       margin-left: 100px;
       margin-top: 70px;
     }
