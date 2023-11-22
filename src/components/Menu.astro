@@ -1,54 +1,49 @@
 ---
 import { Image } from "astro:assets";
 import dans from "../assets/images/dansestudiet.svg";
+const { link } = Astro.props;
 ---
 
-<section>
-  <div>
-    <ul>
-      <li>Skema</li>
-      <li>underviser</li>
-      <li>Danseuddannelse</li>
-      <li>Workshops</li>
-      <li>kontakt</li>
-    </ul>
-  </div>
-
-  <Image class="logo" src={dans} alt="dans" />
-  <div class="line"></div>
-</section>
+<nav>
+  <ul>
+    <li><a href={link}><Image class="logo" src={dans} alt="dans" /></a></li>
+    <li class="menu">Skema</li>
+    <li class="menu">Underviser</li>
+    <li class="menu">Danseuddannelse</li>
+    <li class="menu">Workshops</li>
+    <li class="menu">Kontakt</li>
+  </ul>
+</nav>
 
 <style>
   @media (min-width: 800px) {
     ul {
       list-style: none;
-      padding: 0;
-      text-align: right;
+      padding-left: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
     li {
       display: inline-block;
       margin-right: 50px;
-      margin-top: 39px;
+      margin-top: 20px;
     }
+
     img {
-      clip-path: polygon(
-        0 0,
-        calc(100% - 46px) 0,
-        98% calc(100% - 40px),
-        0 calc(100% - 40px)
-      );
+      clip-path: polygon(0px 0px, 396px 0px, 98% 155px, 0px 155px);
     }
 
     .logo {
       background-color: #196572;
-      padding: 53px;
-      margin-top: -90px;
+      padding-inline: 169px;
+      padding-block: 40px;
+      margin-block: -3rem;
     }
-    .line {
-      width: 100%; /* Juster bredden efter behov */
-      margin: 0 auto; /* Centerer linjen */
-      margin-top: -44px;
-      border-bottom: 4px solid #196572;
+
+    nav {
+      border-bottom: 4px solid var(--border-stroke);
+      height: 124px;
     }
   }
 </style>
