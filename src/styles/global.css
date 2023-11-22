@@ -79,7 +79,11 @@ svg {
   font-family: "opensans2";
   src: url("./Fonts/OpenSans-VariableFont_wdth,wght.tff");
 } */
-
+h1 {
+  font-family: Dansestudiet2;
+  color: var(--text-green);
+  font-size: 180px;
+}
 h2 {
   font-family: Dansestudiet2;
   color: var(--text-green);

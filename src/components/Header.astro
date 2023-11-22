@@ -7,43 +7,27 @@ import header from "../assets/images/headerbillede.webp";
   <div class="img">
     <Image class="header" src={header} alt="header" />
   </div>
-  <div>
-    <h2>Danse</h2>
-    <h2 class="studiet">Studiet</h2>
+  <div class="title">
+    <h1>Danse</h1>
+    <h1 class="studiet">Studiet</h1>
   </div>
 </section>
 
 <style>
   @media (min-width: 800px) {
-    ul {
-      list-style: none;
-      padding: 0;
-      text-align: right;
-      margin-top: -80px;
-    }
-    li {
-      display: inline-block;
-      margin-right: 50px;
-    }
     img {
-      clip-path: polygon(
-        0 0,
-        calc(100% - 145px) 0,
-        calc(100% - 7px) calc(100% - 0px),
-        0 calc(100% - 0px)
-      );
+      clip-path: polygon(0 0, calc(100% - 145px) 0, calc(100% - 7px) calc(100% - 0px), 0 calc(100% - 0px));
     }
-
     section {
+      display: flex;
       border-bottom: 4px solid var(--border-stroke);
       padding-bottom: 3rem;
     }
-    h2 {
-      text-align: center;
-      margin-top: -268px;
-      font-size: 102px;
+    .title {
+      margin-top: 5rem;
     }
     .studiet {
+      font-size: 140px;
       margin-top: -15px;
       margin-left: 261px;
     }
