@@ -1,77 +1,78 @@
-* {
-  margin: 0;
-}
-:root {
-  /* colors */
-  --color-green-100: #588187;
-  --color-green-600: #196572;
-  --color-white-200: #efefef;
-  --color-yellow-500: #ffe000;
-  /* color nav & border*/
-  --nav-text: var(--color-green-600);
-  --border-stroke: var(--color-green-600);
-  /* Text */
-  --text-green: var(--color-green-600);
-  --text-grey: var(--color-white-200);
-  /* Button primary*/
-  --button-primary-default-border: var(--color-yellow-500);
-  --button-primary-default-surface: var(--color-green-600);
-  --button-primary-default-text: var(--color-yellow-500);
-  --button-primary-hover-border: var(--color-green-600);
-  --button-primary-hover-surface: var(--color-yellow-500);
-  --button-primary-hover-text: var(--color-green-600);
-  --button-primary-icon: var(--color-yellow-500);
-  /* Button secondary*/
-  --button-secondary-default-border: var(--color-white-200);
-  --button-secondary-default-surface: var(--color-green-600);
-  --button-secondary-default-text: var(--color-white-200);
-  --button-secondary-hover-border: var(--color-green-600);
-  --button-secondary-hover-surface: var(--color-yellow-500);
-  --button-secondary-hover-text: var(--color-green-600);
-  --button-secondary-icon: var(--color-yellow-500);
-  /* Logo */
-  --logo-default-surface: var(--color-white-200);
-  --logo-hover: var(--color-yellow-500);
-  /* Stilarter badge */
-  --stilarter-default-surface: var(--color-green-600);
-  --stilarter-default-text: var(--color-white-200);
-  --stilarter-hover: var(--color-yellow-500);
-  /* Surface */
-  --surface-primary: var(--color-white-200);
-  --surface-secondary: var(--color-green-600);
-}
+@media (min-width: 800px) {
+  * {
+    margin: 0;
+  }
+  :root {
+    /* colors */
+    --color-green-100: #588187;
+    --color-green-600: #196572;
+    --color-white-200: #efefef;
+    --color-yellow-500: #ffe000;
+    /* color nav & border*/
+    --nav-text: var(--color-green-600);
+    --border-stroke: var(--color-green-600);
+    /* Text */
+    --text-green: var(--color-green-600);
+    --text-grey: var(--color-white-200);
+    /* Button primary*/
+    --button-primary-default-border: var(--color-yellow-500);
+    --button-primary-default-surface: var(--color-green-600);
+    --button-primary-default-text: var(--color-yellow-500);
+    --button-primary-hover-border: var(--color-green-600);
+    --button-primary-hover-surface: var(--color-yellow-500);
+    --button-primary-hover-text: var(--color-green-600);
+    --button-primary-icon: var(--color-yellow-500);
+    /* Button secondary*/
+    --button-secondary-default-border: var(--color-white-200);
+    --button-secondary-default-surface: var(--color-green-600);
+    --button-secondary-default-text: var(--color-white-200);
+    --button-secondary-hover-border: var(--color-green-600);
+    --button-secondary-hover-surface: var(--color-yellow-500);
+    --button-secondary-hover-text: var(--color-green-600);
+    --button-secondary-icon: var(--color-yellow-500);
+    /* Logo */
+    --logo-default-surface: var(--color-white-200);
+    --logo-hover: var(--color-yellow-500);
+    /* Stilarter badge */
+    --stilarter-default-surface: var(--color-green-600);
+    --stilarter-default-text: var(--color-white-200);
+    --stilarter-hover: var(--color-yellow-500);
+    /* Surface */
+    --surface-primary: var(--color-white-200);
+    --surface-secondary: var(--color-green-600);
+  }
 
-body {
-  min-block-size: 100%;
-}
+  body {
+    min-block-size: 100%;
+  }
 
-img,
-picture,
-video,
-svg {
-  display: block;
-}
+  img,
+  picture,
+  video,
+  svg {
+    display: block;
+  }
 
-@font-face {
-  font-family: "Dansestudiet1";
-  src: url("/fonts/dansestudietdisplay1-bold.woff2") format("truetype");
-  /* Juster stien og formatet efter din filtype (.ttf, .otf, etc.) */
-}
+  @font-face {
+    font-family: "Dansestudiet1";
+    src: url("/fonts/dansestudietdisplay1-bold.woff2") format("truetype");
+    /* Juster stien og formatet efter din filtype (.ttf, .otf, etc.) */
+  }
 
-@font-face {
-  font-family: "Dansestudiet2";
-  src: url("/fonts/dansestudietdisplay1.woff2");
-}
-@font-face {
-  font-family: "Dansestudiet3";
-  src: url("/fonts/dansestudietsimple-bold.woff2");
-}
-@font-face {
-  font-family: "Dansestudiet4";
-  src: url("/fonts/dansestudietsimple.woff2");
-}
+  @font-face {
+    font-family: "Dansestudiet2";
+    src: url("/fonts/dansestudietdisplay1.woff2");
+  }
+  @font-face {
+    font-family: "Dansestudiet3";
+    src: url("/fonts/dansestudietsimple-bold.woff2");
+  }
+  @font-face {
+    font-family: "Dansestudiet4";
+    src: url("/fonts/dansestudietsimple.woff2");
+  }
 
-/* @font-face {
+  /* @font-face {
   font-family: "opensans1";
   src: url("./Fonts/OpenSans-Italic-VariableFont_wdth,wght.tff");
 }
@@ -79,67 +80,212 @@ svg {
   font-family: "opensans2";
   src: url("./Fonts/OpenSans-VariableFont_wdth,wght.tff");
 } */
-h1 {
-  font-family: Dansestudiet2;
-  color: var(--text-green);
-  font-size: 180px;
-}
-h2 {
-  font-family: Dansestudiet2;
-  color: var(--text-green);
-  font-size: 56px;
-}
-h3 {
-  font-family: Dansestudiet2;
-  color: var(--text-green);
-  font-size: 40px;
-}
-h4 {
-  font-family: "Open Sans", sans-serif;
-  color: var(--text-green);
-  font-size: 36px;
-}
-h5 {
-  font-family: "Open Sans", sans-serif;
-  color: var(--text-green);
-  font-size: 30px;
-}
-h6 {
-  font-family: "Open Sans", sans-serif;
-  color: var(--stilarter-default-text);
-  text-transform: uppercase;
-  font-size: 20px;
-}
-p.grey {
-  font-family: "Open Sans", sans-serif;
-  color: var(--text-grey);
-  font-size: 18px;
-  line-height: 35px;
-}
+  h1 {
+    font-family: Dansestudiet2;
+    color: var(--text-green);
+    font-size: 180px;
+  }
+  h2 {
+    font-family: Dansestudiet2;
+    color: var(--text-green);
+    font-size: 56px;
+  }
+  h3 {
+    font-family: Dansestudiet2;
+    color: var(--text-green);
+    font-size: 40px;
+  }
+  h4 {
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-green);
+    font-size: 36px;
+  }
+  h5 {
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-green);
+    font-size: 30px;
+  }
+  h6 {
+    font-family: "Open Sans", sans-serif;
+    color: var(--stilarter-default-text);
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  p.grey {
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-grey);
+    font-size: 18px;
+    line-height: 35px;
+  }
 
-p.green {
-  font-family: "Open Sans", sans-serif;
-  color: var(--text-green);
-  font-size: 22px;
-}
+  p.green {
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-green);
+    font-size: 22px;
+  }
 
-p.semibold {
-  font-family: "Open Sans", sans-serif;
-  color: var(--text-green);
-  font-weight: 600;
-  font-size: 22px;
-}
+  p.semibold {
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-green);
+    font-weight: 600;
+    font-size: 22px;
+  }
 
-a {
-  font-family: "Open Sans", sans-serif;
-  color: var(--text-green);
-  text-transform: uppercase;
-  font-size: 30px;
+  a {
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-green);
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  li {
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-green);
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+  }
 }
-li {
-  font-family: "Open Sans", sans-serif;
-  color: var(--text-green);
-  font-size: 20px;
-  font-weight: 600;
-  cursor: pointer;
+@media (max-width: 400px) {
+  :root {
+    /* colors */
+    --color-green-100: #588187;
+    --color-green-600: #196572;
+    --color-white-200: #efefef;
+    --color-yellow-500: #ffe000;
+    /* color nav & border*/
+    --nav-text: var(--color-green-600);
+    --border-stroke: var(--color-green-600);
+    /* Text */
+    --text-green: var(--color-green-600);
+    --text-grey: var(--color-white-200);
+    /* Button primary*/
+    --button-primary-default-border: var(--color-yellow-500);
+    --button-primary-default-surface: var(--color-green-600);
+    --button-primary-default-text: var(--color-yellow-500);
+    --button-primary-hover-border: var(--color-green-600);
+    --button-primary-hover-surface: var(--color-yellow-500);
+    --button-primary-hover-text: var(--color-green-600);
+    --button-primary-icon: var(--color-yellow-500);
+    /* Button secondary*/
+    --button-secondary-default-border: var(--color-white-200);
+    --button-secondary-default-surface: var(--color-green-600);
+    --button-secondary-default-text: var(--color-white-200);
+    --button-secondary-hover-border: var(--color-green-600);
+    --button-secondary-hover-surface: var(--color-yellow-500);
+    --button-secondary-hover-text: var(--color-green-600);
+    --button-secondary-icon: var(--color-yellow-500);
+    /* Logo */
+    --logo-default-surface: var(--color-white-200);
+    --logo-hover: var(--color-yellow-500);
+    /* Stilarter badge */
+    --stilarter-default-surface: var(--color-green-600);
+    --stilarter-default-text: var(--color-white-200);
+    --stilarter-hover: var(--color-yellow-500);
+    /* Surface */
+    --surface-primary: var(--color-white-200);
+    --surface-secondary: var(--color-green-600);
+  }
+
+  body {
+    min-block-size: 100%;
+  }
+
+  img,
+  picture,
+  video,
+  svg {
+    display: block;
+  }
+
+  @font-face {
+    font-family: "Dansestudiet1";
+    src: url("/fonts/dansestudietdisplay1-bold.woff2") format("truetype");
+    /* Juster stien og formatet efter din filtype (.ttf, .otf, etc.) */
+  }
+
+  @font-face {
+    font-family: "Dansestudiet2";
+    src: url("/fonts/dansestudietdisplay1.woff2");
+  }
+  @font-face {
+    font-family: "Dansestudiet3";
+    src: url("/fonts/dansestudietsimple-bold.woff2");
+  }
+  @font-face {
+    font-family: "Dansestudiet4";
+    src: url("/fonts/dansestudietsimple.woff2");
+  }
+
+  /* @font-face {
+    font-family: "opensans1";
+    src: url("./Fonts/OpenSans-Italic-VariableFont_wdth,wght.tff");
+  }
+  @font-face {
+    font-family: "opensans2";
+    src: url("./Fonts/OpenSans-VariableFont_wdth,wght.tff");
+  } */
+  h1 {
+    font-family: Dansestudiet2;
+    color: var(--text-green);
+    font-size: 180px;
+  }
+  h2 {
+    font-family: Dansestudiet2;
+    color: var(--text-green);
+    font-size: 56px;
+  }
+  h3 {
+    font-family: Dansestudiet2;
+    color: var(--text-green);
+    font-size: 40px;
+  }
+  h4 {
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-green);
+    font-size: 36px;
+  }
+  h5 {
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-green);
+    font-size: 30px;
+  }
+  h6 {
+    font-family: "Open Sans", sans-serif;
+    color: var(--stilarter-default-text);
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  p.grey {
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-grey);
+    font-size: 18px;
+    line-height: 35px;
+  }
+
+  p.green {
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-green);
+    font-size: 22px;
+  }
+
+  p.semibold {
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-green);
+    font-weight: 600;
+    font-size: 22px;
+  }
+
+  a {
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-green);
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  li {
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-green);
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+  }
 }
