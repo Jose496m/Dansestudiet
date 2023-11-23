@@ -54,21 +54,21 @@ svg {
 
 @font-face {
   font-family: "Dansestudiet1";
-  src: url("./fonts/DansestudietDisplay1-bold.otf") format("truetype");
+  src: url("./fonts/DansestudietDisplay1-bold.woff2") format("truetype");
   /* Juster stien og formatet efter din filtype (.ttf, .otf, etc.) */
 }
 
 @font-face {
   font-family: "Dansestudiet2";
-  src: url("public/fonts/DansestudietDisplay1.otf");
+  src: url("public/fonts/DansestudietDisplay1.woff2");
 }
 @font-face {
   font-family: "Dansestudiet3";
-  src: url("public/fonts/DansestudietSimple-Bold.otf");
+  src: url("public/fonts/DansestudietSimple-Bold.woff2");
 }
 @font-face {
   font-family: "Dansestudiet4";
-  src: url("public/onts/DansestudietSimple.otf");
+  src: url("public/onts/DansestudietSimple.woff2");
 }
 
 /* @font-face {
