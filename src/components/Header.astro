@@ -24,7 +24,12 @@ import Button from "./Button.astro";
       border-bottom: 4px solid var(--border-stroke);
     }
     img {
-      clip-path: polygon(0 0, calc(100% - 145px) 0, calc(100% - 7px) calc(100% - 0px), 0 calc(100% - 0px));
+      clip-path: polygon(
+        0 0,
+        calc(100% - 145px) 0,
+        calc(100% - 7px) calc(100% - 0px),
+        0 calc(100% - 0px)
+      );
       grid-column: 1/2;
       grid-row: 1/3;
     }
@@ -43,29 +48,5 @@ import Button from "./Button.astro";
     }
   }
   @media (max-width: 600px) {
-    section {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      border-bottom: 4px solid var(--border-stroke);
-      border-top: 4px solid var(--border-stroke);
-    }
-    img {
-      grid-column: 1/2;
-    }
-
-    .title {
-      margin-top: 5rem;
-      margin-inline: 1rem;
-    }
-    .button {
-      font-size: 21px;
-    }
-    .studiet {
-      font-size: 67px;
-      text-align: end;
-    }
-    .danse {
-      font-size: 120px;
-    }
   }
 </style>

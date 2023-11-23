@@ -7,32 +7,34 @@ const { title, link } = Astro.props;
 </div>
 
 <style>
-  a {
-    display: grid;
-    border: none;
-    background: transparent;
-    align-items: center;
-    text-decoration: none;
-  }
-  span {
-    color: var(--button-primary-default-text);
-    background-color: var(--button-primary-default-surface);
-    border: 4px solid var(--button-primary-default-border);
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600;
-    cursor: pointer;
-    box-sizing: border-box;
-    position: relative;
-    padding: 12px 40px;
-  }
-  span:hover {
-    color: var(--button-primary-hover-text);
-    background-color: var(--button-secondary-hover-surface);
-    border: 4px solid var(--button-primary-hover-border);
-  }
-  .button_container {
-    min-width: fit-content;
-    width: fit-content;
+  @media (min-width: 800px) {
+    a {
+      display: grid;
+      border: none;
+      background: transparent;
+      align-items: center;
+      text-decoration: none;
+    }
+    span {
+      color: var(--button-primary-default-text);
+      background-color: var(--button-primary-default-surface);
+      border: 4px solid var(--button-primary-default-border);
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      cursor: pointer;
+      box-sizing: border-box;
+      position: relative;
+      padding: 12px 40px;
+    }
+    span:hover {
+      color: var(--button-primary-hover-text);
+      background-color: var(--button-secondary-hover-surface);
+      border: 4px solid var(--button-primary-hover-border);
+    }
+    .button_container {
+      min-width: fit-content;
+      width: fit-content;
+    }
   }
 
   @media (max-width: 600px) {
