@@ -6,6 +6,7 @@ import Overskrift from "./Overskrift.astro";
 ---
 
 <Overskrift title="Månedens Workshop" />
+<div class="line"></div>
 <section class="workshop">
   <div class="workshop-image">
     <Image class="workshop1" src={workshop1} alt="workshop1" />
@@ -48,12 +49,14 @@ import Overskrift from "./Overskrift.astro";
     .workshop1,
     .workshop2 {
       height: auto;
+
       width: 50%;
     }
-
-    section {
-      border-block: 4px solid var(--border-stroke);
-      padding: 4rem;
+    .line {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      border-bottom: 4px solid #191919; /* Juster farven efter behov */
     }
   }
 </style>
