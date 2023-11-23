@@ -4,13 +4,11 @@ import dans from "../assets/images/dansestudiet.svg";
 const { link } = Astro.props;
 ---
 
-<button id="burger-menu">
-  <span></span>
-</button>
+<a class="logo_burger" href={link}><Image class="logo logo_burger" src={dans} alt="dans" /></a>
 
 <nav id="menu">
   <ul>
-    <li><a href={link}><Image class="logo" src={dans} alt="dans" /></a></li>
+    <a class="logo_desktop" href={link}><Image class="logo" src={dans} alt="dans" /></a>
     <li class="menu">Skema</li>
     <li class="menu">Underviser</li>
     <li class="menu">Danseuddannelse</li>
@@ -43,87 +41,41 @@ const { link } = Astro.props;
       padding-inline: 169px;
       padding-block: 40px;
       margin-block: -3rem;
+      float: rigtht;
     }
 
+    .logo_desktop {
+      display: block;
+    }
+    #menu .logo_burger {
+      display: none;
+    }
     nav {
       border-bottom: 4px solid var(--border-stroke);
       height: 124px;
+    }
+    #menu {
+      float: right;
+    }
+    #menu ul {
+      display: flex;
+      align-items: center;
+      gap: 20px 40px;
+      margin: 30px;
+    }
+
+    #menu a:hover {
+      color: white;
     }
   }
 
   @media (max-width: 600px) {
-    ul {
-      list-style: none;
-      padding-left: 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    li {
-      display: inline-block;
-
-      margin-top: 20px;
-    }
-
     .logo {
       background-color: #196572;
-      padding-inline: 80px;
+      padding-inline: 120px;
       padding-block: 40px;
-      margin-block: -3rem;
     }
 
-    nav {
-      border-bottom: 4px solid var(--border-stroke);
-      height: 124px;
-      width: 820px;
-    }
-
-    #burger-menu {
-      display: block;
-    }
-    #burger-menu span,
-    #burger-menu span:before,
-    #burger-menu span:after {
-      background: black;
-      display: block;
-      height: 3px;
-      opacity: 1;
-      position: absolute;
-      transition: 0.3s ease-in-out;
-      content: "";
-    }
-    #burger-menu span:before {
-      left: 0px;
-
-      width: 27px;
-    }
-    #burger-menu span {
-      right: -50px;
-      top: 13px;
-      width: 27px;
-    }
-    #burger-menu span:after {
-      left: 0px;
-      top: 10px;
-      width: 27px;
-    }
-    #burger-menu.close span:before {
-      top: 0px;
-      transform: rotate(90deg);
-      width: 27px;
-    }
-    #burger-menu.close span {
-      transform: rotate(-45deg);
-      top: 13px;
-      width: 27px;
-    }
-    #burger-menu.close span:after {
-      top: 0px;
-      left: 0;
-      transform: rotate(90deg);
-      opacity: 0;
-      width: 0;
-    }
     #menu {
       z-index: 1;
       min-width: 100%;
@@ -149,19 +101,18 @@ const { link } = Astro.props;
       flex-direction: column;
       align-items: center;
       gap: 20px 40px;
-      margin: 0px;
+      margin: 20px;
     }
     #menu li {
       list-style: none;
       display: initial;
-
-      font-family: "Inter", sans-serif;
     }
-    #menu a {
+
+    #menu .logo_desktop {
+      display: none;
+    }
+    #menu .logo_burger {
       display: block;
-      font-size: 20px;
-      margin-bottom: 30px;
-      text-decoration: none;
     }
   }
 </style>
