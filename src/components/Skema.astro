@@ -1,2 +1,82 @@
 ---
+import { Image } from "astro:assets";
+import skema1 from "../assets/images/skema.webp";
+import skema2 from "../assets/images/skema.webp";
+import skema3 from "../assets/images/skema.webp";
+import Overskrift from "./Overskrift.astro";
+import Button from "./Button.astro";
 ---
+
+<Overskrift title="Skema" />
+<section>
+  <div class="flex">
+    <Image class="skema1" src={skema1} alt="skema1" />
+    <Image class="skema2" src={skema2} alt="skema2" />
+    <Image class="skema3" src={skema3} alt="skema3" />
+  </div>
+  <div class="green_background">
+    <Button link="#" title="Se alle" />
+  </div>
+</section>
+
+<style>
+  @media (min-width: 800px) {
+    section {
+      border-block: 4px solid var(--border-stroke);
+    }
+    .flex {
+      display: flex;
+      gap: 50px;
+    }
+    .skema1 {
+      border: 4px solid #196572;
+      margin-bottom: 2rem;
+      margin-left: 550px;
+      margin-top: 60px;
+    }
+    .skema2 {
+      border: 4px solid #196572;
+      margin-top: 60px;
+    }
+    .skema3 {
+      border: 4px solid #196572;
+      margin-top: 60px;
+    }
+    .green_background {
+      clip-path: polygon(4px -1px, 22.46% -1px, 31.62% 100.17%, 0.17% 100%);
+      background-color: var(--surface-secondary);
+      padding: 6.2rem;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .skema1 {
+      border: 4px solid #196572;
+      margin-bottom: 2rem;
+
+      margin-top: 60px;
+      width: 70%;
+      height: 70%;
+    }
+    .skema2 {
+      border: 4px solid #196572;
+      margin-top: 60px;
+      width: 70%;
+      height: 70%;
+    }
+    .skema3 {
+      border: 4px solid #196572;
+      margin-top: 60px;
+      width: 70%;
+      height: 70%;
+    }
+
+    .flex {
+      display: flex;
+      gap: 35px;
+      margin-left: 80px;
+    }
+    .green_background {
+    }
+  }
+</style>

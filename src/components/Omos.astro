@@ -25,13 +25,12 @@ import Overskrift from "./Overskrift.astro";
 </section>
 
 <style>
-  section {
-    background-color: #196572;
-  }
-
   @media (min-width: 800px) {
     .flex {
       display: flex;
+    }
+    section {
+      background-color: #196572;
     }
 
     .img {
@@ -66,6 +65,38 @@ import Overskrift from "./Overskrift.astro";
     p {
       width: 500px;
       margin-left: 100px;
+      margin-top: 70px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    section {
+      background-color: #196572;
+    }
+    .flex {
+      display: flex;
+    }
+    .omos {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    h2 {
+      color: #196572;
+      text-align: center;
+      margin-top: 200px;
+    }
+
+    .line {
+      width: 820px;
+      margin: 0 auto;
+      border-bottom: 4px solid #196572;
+    }
+
+    p {
+      width: 500px;
+
       margin-top: 70px;
     }
   }
