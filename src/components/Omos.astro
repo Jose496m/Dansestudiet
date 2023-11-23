@@ -25,13 +25,12 @@ import Overskrift from "./Overskrift.astro";
 </section>
 
 <style>
-  section {
-    background-color: #196572;
-  }
-
   @media (min-width: 800px) {
     .flex {
       display: flex;
+    }
+    section {
+      background-color: #196572;
     }
 
     .img {
@@ -70,17 +69,17 @@ import Overskrift from "./Overskrift.astro";
     }
   }
 
-  @media (max-width: 600px) {
-    img {
-      clip-path: polygon(
-        calc(100% - 500px) calc(100% - 400px),
-        100% calc(100% - 400px),
-        100% 100%,
-        calc(100% - 375px) 100%
-      );
-
-      width: 100%; /* Sørg for, at billedet tager 100% af forælderens bredde */
+  @media (max-width: 400px) {
+    section {
+      background-color: #196572;
+    }
+    .flex {
+      display: flex;
+    }
+    .omos {
+      width: 100%;
       height: auto;
+      object-fit: cover;
     }
 
     h2 {
@@ -90,14 +89,14 @@ import Overskrift from "./Overskrift.astro";
     }
 
     .line {
-      width: 820px; /* Juster bredden efter behov */
-      margin: 0 auto; /* Centerer linjen */
+      width: 820px;
+      margin: 0 auto;
       border-bottom: 4px solid #196572;
     }
 
     p {
       width: 500px;
-      margin-left: 100px;
+
       margin-top: 70px;
     }
   }
