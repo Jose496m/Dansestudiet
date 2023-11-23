@@ -4,11 +4,9 @@ import dans from "../assets/images/dansestudiet.svg";
 const { link } = Astro.props;
 ---
 
-<a class="logo_burger" href={link}><Image class="logo logo_burger" src={dans} alt="dans" /></a>
-
 <nav id="menu">
   <ul>
-    <a class="logo_desktop" href={link}><Image class="logo" src={dans} alt="dans" /></a>
+    <a href={link}><Image class="logo" src={dans} alt="dans" /></a>
     <li class="menu">Skema</li>
     <li class="menu">Underviser</li>
     <li class="menu">Danseuddannelse</li>
