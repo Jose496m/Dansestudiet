@@ -6,52 +6,53 @@ import instagram from "../assets/images/instagram.svg";
 import map from "../assets/images/map.svg";
 ---
 
-<div class="spalter">
-  <div class="spalte1">
-    <p class="kontakt">Kontakt</p>
-    <p>
-      Dansestudiet Aarhus <br />
-      Bissensgade 14 B <br />
-      8000 Aarhus C <br />
-      E-mail: <br />
-      info@dansestudiet.dk <br />
-      Telefon: 40102229 <br />
-      CVR-nummer: 41118687
-    </p>
-  </div>
-
-  <div class="spalte2">
-    <p class="kommende_begivenheder">Kommender Begivenheder</p>
-    <div class="box1">
-      <p>Stabilitetstræning & Stræk</p>
-      <p class="light_tekst">MANDAG 8:30-9:30</p>
+<section>
+  <div class="spalter">
+    <div class="spalte1">
+      <p class="kontakt">Kontakt</p>
+      <p>
+        Dansestudiet Aarhus <br />
+        Bissensgade 14 B <br />
+        8000 Aarhus C <br />
+        E-mail: <br />
+        info@dansestudiet.dk <br />
+        Telefon: 40102229 <br />
+        CVR-nummer: 41118687
+      </p>
     </div>
-    <div class="box2">
-      <p>Street Dance Teens</p>
-      <p class="light_tekst">MANDAG 17:30-18:30</p>
+
+    <div class="spalte2">
+      <p class="kommende_begivenheder">Kommender Begivenheder</p>
+      <div class="box1">
+        <p>Stabilitetstræning & Stræk</p>
+        <p class="light_tekst">MANDAG 8:30-9:30</p>
+      </div>
+      <div class="box2">
+        <p>Street Dance Teens</p>
+        <p class="light_tekst">MANDAG 17:30-18:30</p>
+      </div>
+    </div>
+
+    <div class="spalte3">
+      <p class="aabningstider">Åbningstider</p>
+      <p>
+        Mandag 09:00 - 21:00 <br />
+        Tirsdag 09:30 - 21:00 <br />
+        Onsdag 16:00 - 21:00 <br />
+        Torsdag 08:00 - 21:00 <br />
+        Fredag 08:00 - 17:30 <br />
+        Lørdag 10:00 - 11:00 <br />
+      </p>
     </div>
   </div>
 
-  <div class="spalte3">
-    <p class="aabningstider">Åbningstider</p>
-    <p>
-      Mandag 09:00 - 21:00 <br />
-      Tirsdag 09:30 - 21:00 <br />
-      Onsdag 16:00 - 21:00 <br />
-      Torsdag 08:00 - 21:00 <br />
-      Fredag 08:00 - 17:30 <br />
-      Lørdag 10:00 - 11:00 <br />
-    </p>
+  <div class="logo">
+    <Image class="facebook logo-container" src={facebook} alt="facebook" />
+    <Image class="youtube logo-container" src={youtube} alt="youtube" />
+    <Image class="instagram logo-container" src={instagram} alt="instagram" />
+    <Image class="map logo-container" src={map} alt="map" />
   </div>
-</div>
-
-<div class="logo">
-  <Image class="facebook logo-container" src={facebook} alt="facebook" />
-  <Image class="youtube logo-container" src={youtube} alt="youtube" />
-  <Image class="instagram logo-container" src={instagram} alt="instagram" />
-  <Image class="map logo-container" src={map} alt="map" />
-</div>
-
+</section>
 <style>
   @media (min-width: 800px) {
     ul {
@@ -107,6 +108,57 @@ import map from "../assets/images/map.svg";
     }
   }
   @media (max-width: 400px) {
+    ul {
+      list-style: none;
+    }
+
+    p {
+      color: var(--text-green);
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+    }
+
+    .light_tekst {
+      font-weight: lighter;
+    }
+    .box1,
+    .box2 {
+      width: 300px;
+      border: 3px solid var(--text-green);
+      padding: 15px;
+      margin: -3px;
+    }
+
+    .kontakt,
+    .kommende_begivenheder,
+    .aabningstider {
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+    }
+    .spalter {
+      display: flex;
+      margin-left: 50px;
+      gap: 50px;
+      margin-top: 50px;
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 60px;
+    }
+
+    .facebook,
+    .youtube,
+    .instagram,
+    .map {
+    }
+
+    .logo-container {
+      height: 35px;
+      width: fit-content;
+    }
   }
 </style>
 
