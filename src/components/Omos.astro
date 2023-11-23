@@ -7,16 +7,21 @@ import Overskrift from "./Overskrift.astro";
 <Overskrift title="Om os" />
 <div class="line"></div>
 <section class="flex">
-  <div>
+  <div class="tekst">
     <p class="grey">
       I 40 år har Dansestudiet været en vigtig del af det aarhusianske
       dansemiljø, og det er med stor respekt og taknemmelighed at de to nye
       indehavere Lisbet Kokholm Nør & Anne-Teresa Njust Høj overtager og
-      viderefører Dansestudiet Aarhus. Undervisningen har hovedvægt på modern,
-      jazz, klassisk ballet og street. Der er hold for både nybegyndere, let
-      øvede, øvede og professionelle dansere – uanset alder, niveau og ambition
-      er du velkommen. Dansestudiet Aarhus er central beliggende i Aarhus C tæt
-      på Musikhuset, Bora Bora – dans og visuelt teater, Godsbanen og AROS.
+      viderefører Dansestudiet Aarhus.
+    </p>
+    <p class="grey">
+      Undervisningen har hovedvægt på modern, jazz, klassisk ballet og street.
+      Der er hold for både nybegyndere, let øvede, øvede og professionelle
+      dansere – uanset alder, niveau og ambition er du velkommen.
+    </p>
+    <p class="grey">
+      Dansestudiet Aarhus er central beliggende i Aarhus C tæt på Musikhuset,
+      Bora Bora – dans og visuelt teater, Godsbanen og AROS.
     </p>
   </div>
   <div class="img">
@@ -36,14 +41,15 @@ import Overskrift from "./Overskrift.astro";
     .img {
       max-width: 500px; /* Juster bredden efter behov */
       width: 100%; /* Sørg for, at billedet tager 100% af forælderens bredde */
+      margin-left: 338px;
     }
 
     img {
       clip-path: polygon(
-        calc(100% - 500px) calc(100% - 400px),
+        calc(100% - 500px) calc(100% - 395px),
         100% calc(100% - 400px),
         100% 100%,
-        calc(100% - 375px) 100%
+        calc(100% - 429px) 100%
       );
 
       width: 100%; /* Sørg for, at billedet tager 100% af forælderens bredde */
@@ -63,9 +69,10 @@ import Overskrift from "./Overskrift.astro";
     }
 
     p {
-      width: 500px;
       margin-left: 100px;
-      margin-top: 70px;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      width: 500px;
     }
   }
 
