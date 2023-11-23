@@ -60,15 +60,15 @@ svg {
 
 @font-face {
   font-family: "Dansestudiet2";
-  src: url("public/Fonts/DansestudietDisplay1.otf");
+  src: url("public/fonts/DansestudietDisplay1.otf");
 }
 @font-face {
   font-family: "Dansestudiet3";
-  src: url("public/Fonts/DansestudietSimple-Bold.otf");
+  src: url("public/fonts/DansestudietSimple-Bold.otf");
 }
 @font-face {
   font-family: "Dansestudiet4";
-  src: url("public/Fonts/DansestudietSimple.otf");
+  src: url("public/onts/DansestudietSimple.otf");
 }
 
 /* @font-face {
