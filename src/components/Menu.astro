@@ -58,5 +58,37 @@ const { link } = Astro.props;
     }
   }
   @media (max-width: 600px) {
+    ul {
+      display: none;
+    }
+    li {
+      display: none;
+    }
+
+    .logo {
+      background-color: #196572;
+      padding-inline: 141px;
+      padding-block: 40px;
+      margin-block: -3rem;
+      margin-left: -70px;
+    }
+
+    .logo_desktop {
+      display: block;
+    }
+    #menu .logo_burger {
+      display: none;
+    }
+    nav {
+      border-bottom: 4px solid var(--border-stroke);
+      height: 124px;
+    }
+
+    #menu ul {
+      display: flex;
+      align-items: center;
+      gap: 20px 40px;
+      margin: 30px;
+    }
   }
 </style>
